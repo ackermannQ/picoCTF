@@ -1,3 +1,19 @@
+# The numbers
+
+## Category
+
+Cryptography
+
+## Question
+
+The numbers (link)... what do they mean?
+
+
+## Hint
+
+The flag is in the format PICOCTF{}
+
+## Solution
 Well, with the { } it seems that the letters have been replaced with their position in the alphabet
 
 alphabet = "abcdefghijklmnopqrstuvwxyz"
