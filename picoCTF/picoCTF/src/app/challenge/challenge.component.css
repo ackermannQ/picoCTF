@@ -1,0 +1,25 @@
+
+.t {
+  margin-left: 25%;
+  text-align: center;
+  display: inline ;
+  position : relative;
+  font : 155px Helvetica, Sans-Serif;
+  letter-spacing: -5px;
+  color: rgb(12, 207, 12);
+  }
+
+
+.t::after {
+  text-align: center;
+  content: "picoCTF";
+  position: absolute; left:10px; top:5px;
+  color:  rgb(10, 54, 10);;
+}
+
+
+.body__text {
+  text-align: center;
+  color: rgb(12, 207, 12);
+  font : 25px Helvetica, Sans-Serif;
+}

@@ -1,0 +1,43 @@
+<p class = "t">
+  picoCTF
+</p>
+
+<p class = "body__text">
+  Solutions of the challenge from picoCTF
+</p>
+
+<p-dialog header="New challenge" [(visible)]="display" [style]="{ width: '50vw' }">
+  <div class="p-grid p-dir-col">
+    <div class="p-col-6">
+      <div class="box">
+        <p>Title:</p>
+        <input id="disabled-input" type="text" size="30" pInputText/></div>
+    </div>
+    <div class="p-col-6">
+      <div class="box">
+        <p>Category:</p>
+        <p-dropdown [options]="categories" [(ngModel)]="selectedCategory" placeholder="Select a category" optionLabel="name" [showClear]="true"></p-dropdown>
+        <!-- <p>Category: {{selectedCategory ? selectedCategory.name : 'none'}}</p>  -->
+      </div>
+    </div>
+    <div class="p-col-6">
+      <div class="box">
+        <p-checkbox label="Hint" [(ngModel)]="checked" binary="true"></p-checkbox>
+        <!-- {{checked}} : true or false -->
+      </div>
+    </div>
+    <div class="p-col-6">
+      <div class="box">
+        <p>Solution:</p>
+        <textarea pInputTextarea></textarea>
+      </div>
+    </div>
+  </div>
+  <p-footer>
+    <p-button label="Add" icon="pi pi-plus" (click)="valid()" iconPos="left"></p-button>
+    <p-button label="Cancel" icon="pi pi-times" (click)="cancel()" iconPos="left"></p-button>
+
+  </p-footer>
+</p-dialog>
+
+<p-button style="margin-top: 10%; margin-left: 50%;" label="New" icon="pi pi-plus-circle" (click)="showDialog()" iconPos="left"></p-button>
